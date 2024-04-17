@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+In this project, let's build an App Store by applying the concepts we have learned till now.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Refer to the image below:
 
-## Available Scripts
+![image](https://github.com/bukka5sandhya/React-Js-App-Store/assets/133884532/1de129eb-d777-4128-a6fc-ba06328a14c2)
 
-In the project directory, you can run:
+https://assets.ccbp.in/frontend/content/react-js/app-store-output.gif
 
-### `npm start`
+Design Files
+Click to view
+Extra Small (Size < 576px) and Small (Size >= 576px)
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)
+Set Up Instructions
+Click to view
+Download dependencies by running npm install
+Start up the app using npm start
+Completion Instructions
+Functionality to be added
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app must have the following functionalities
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Initially, the Social tab should be active and the apps with Social as their category should be displayed
+When a value is provided in the search input
+The apps in the active category, that include search input value in their name should be displayed
+When another tab is clicked, the apps in the corresponding category, that include search input value in their name should be displayed
+The search should be case insensitive
+When the search input is empty,
+All the apps in the active category should be displayed
+When another tab is clicked, the apps in the corresponding category should be displayed
+The AppStore component is provided with tabsList. It consists of a list of tabItem objects with the following properties in each tabItem object
 
-### `npm test`
+Key	Data Type
+tabId	String
+displayText	String
+The AppStore component is provided with appsList. It consists of a list of app objects with the following properties in each app object
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Key	Data Type
+appId	Number
+appName	String
+imageUrl	String
+category	String
+Components Structure
 
-### `npm run build`
+![image](https://github.com/bukka5sandhya/React-Js-App-Store/assets/133884532/5ae1f206-2ce8-4330-9b29-cf9ac38efc27)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Implementation Files
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Use these files to complete the implementation:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+src/components/AppStore/index.js
+src/components/AppStore/index.css
+src/components/TabItem/index.js
+src/components/TabItem/index.css
+src/components/AppItem/index.js
+src/components/AppItem/index.css
+Quick Tips
+Click to view
 
-### `npm run eject`
+You can use the cursor CSS property to specify the mouse cursor to be displayed when pointing over an element
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  cursor: pointer;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://github.com/bukka5sandhya/React-Js-App-Store/assets/133884532/91a9cdd4-8395-4636-8932-dc6c8471e820)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can use the below outline CSS property for buttons and input elements to remove the highlighting when the elements are clicked
 
-## Learn More
+ outline: none;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Important Note
+Click to view
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The following instructions are required for the tests to pass
 
-### Code Splitting
+The apps should have the alt attribute equal to appName of each app object
+Resources
+Image URLs
+https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png alt should be search icon
+Colors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hex: #fff1eb
+Hex: #ace0f9
+Hex: #1e293b
+Hex: #7b8794
+Hex: #dfe2e5
+Hex: #2563eb
+Hex: #ffffff
+Font-families
+Bree Serif
+Things to Keep in Mind
+All components you implement should go in the src/components directory.
+Don't change the component folder names as those are the files being imported into the tests.
+Do not remove the pre-filled code
+Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
