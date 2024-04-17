@@ -7,38 +7,63 @@ Refer to the image below:
 https://assets.ccbp.in/frontend/content/react-js/app-store-output.gif
 
 Design Files
+
 Click to view
+
 Extra Small (Size < 576px) and Small (Size >= 576px)
+
 Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)
+
 Set Up Instructions
+
 Click to view
+
 Download dependencies by running npm install
+
 Start up the app using npm start
+
 Completion Instructions
+
 Functionality to be added
 
 The app must have the following functionalities
 
 Initially, the Social tab should be active and the apps with Social as their category should be displayed
+
 When a value is provided in the search input
+
 The apps in the active category, that include search input value in their name should be displayed
+
 When another tab is clicked, the apps in the corresponding category, that include search input value in their name should be displayed
+
 The search should be case insensitive
+
 When the search input is empty,
+
 All the apps in the active category should be displayed
+
 When another tab is clicked, the apps in the corresponding category should be displayed
+
 The AppStore component is provided with tabsList. It consists of a list of tabItem objects with the following properties in each tabItem object
 
 Key	Data Type
+
 tabId	String
+
 displayText	String
+
 The AppStore component is provided with appsList. It consists of a list of app objects with the following properties in each app object
 
 Key	Data Type
+
 appId	Number
+
 appName	String
+
 imageUrl	String
+
 category	String
+
 Components Structure
 
 ![image](https://github.com/bukka5sandhya/React-Js-App-Store/assets/133884532/5ae1f206-2ce8-4330-9b29-cf9ac38efc27)
@@ -48,12 +73,19 @@ Implementation Files
 Use these files to complete the implementation:
 
 src/components/AppStore/index.js
+
 src/components/AppStore/index.css
+
 src/components/TabItem/index.js
+
 src/components/TabItem/index.css
+
 src/components/AppItem/index.js
+
 src/components/AppItem/index.css
+
 Quick Tips
+
 Click to view
 
 You can use the cursor CSS property to specify the mouse cursor to be displayed when pointing over an element
